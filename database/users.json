@@ -1,0 +1,80 @@
+[
+  {
+  "_id": {
+    "$oid": "654f9ec2ea7ead465908d1e3"
+  },
+    "username": "bookworm1",
+    "password": "123",
+    "firstName": "Katie",
+    "lastName": "Davenport",
+    "start_date": null,
+    "role": "USER",
+    "photo": null,
+    "biography": null
+  },
+  {
+    "_id": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    },
+    "username": "bookworm2",
+    "password": "234",
+    "firstName": "Raquel",
+    "lastName": "Garcia",
+    "start_date": null,
+    "role": "USER",
+    "photo": null,
+    "biography": null
+  },
+  {
+    "_id": {
+      "$oid": "654ffdd3870c092d5441bc88"
+    },
+    "username": "bookworm3",
+    "password": "345",
+    "firstName": "Steffi",
+    "lastName": "Patel",
+    "start_date": null,
+    "role": "USER",
+    "photo": null,
+    "biography": null
+  },
+  {
+    "_id": {
+      "$oid": "654ffdd3870c092d5441bc89"
+    },
+    "username": "soul_writer",
+    "password": "abc",
+    "firstName": "Barbara",
+    "lastName": "Kingsolver",
+    "start_date": null,
+    "role": "AUTHOR",
+    "photo": null,
+    "biography": "Barabara is known for her novels, essays, and poetry that often explore themes of social justice, environmentalism, and human relationships."
+  },
+  {
+    "_id": {
+      "$oid": "654ffdd3870c092d5441bc8a"
+    },
+    "username": "legal_novel_master",
+    "password": "def",
+    "firstName": "John",
+    "lastName": "Grisham",
+    "start_date": null,
+    "role": "AUTHOR",
+    "photo": null,
+    "biography": "Grisham's novels often revolve around the legal system, lawyers, and courtroom drama"
+  },
+  {
+    "_id": {
+      "$oid": "654ffdd3870c092d5441bc8b"
+    },
+    "username": "mr_admin",
+    "password": "ilovecats",
+    "firstName": "Carmelo",
+    "lastName": "Silva",
+    "start_date": null,
+    "role": "ADMIN",
+    "photo": null,
+    "biography": null
+  }
+]
