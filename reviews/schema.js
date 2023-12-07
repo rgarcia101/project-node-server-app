@@ -1,5 +1,3 @@
-// reference: bookshelf_items
-
 import mongoose from "mongoose";
 const schema = new mongoose.Schema(
     {

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "65150e70870c092d5441bc24"
+    },
+    "user": "654ffdd3870c092d5441bc89",
+    "postDate": null,
+    "post": "Read my recent book 'Flight Behavior'. You'll love it!"
+  },
+  {
+    "_id": {
+      "$oid": "65150e70870c092d5441bc27"
+    },
+    "user": "654ffdd3870c092d5441bc89",
+    "postDate": null,
+    "post": "Demon Copperhead was awarded a Pulitzer Prize for Fiction on the evening of Monday, May 8, 2023."
+  },
+  {
+    "_id": {
+      "$oid": "65150e70899c092d5441bc27"
+    },
+    "user": "654ffdd3870c092d5441bc8a",
+    "postDate": null,
+    "post": "Join online to honor the paperback release of A Court of Silver Flames, the fifth installment in the sexy, richly imagined Court of Thorns and Roses series."
+  }
+]

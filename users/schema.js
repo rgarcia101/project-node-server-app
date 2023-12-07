@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   firstName: String,
   lastName: String,
-  start_date: { type: Date, default: Date.now },
+  startDate: { type: Date, default: Date.now },
   role: {
     type: String,
     enum: ["USER", "AUTHOR", "ADMIN"],  // Combine all roles into one schema?

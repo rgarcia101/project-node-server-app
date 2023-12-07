@@ -1,37 +1,34 @@
-[{
-  "_id": {
-    "$oid": "65510e70870c092d5441bc94"
+[
+  {
+    "_id": {
+      "$oid": "65510e70870c092d5441bc94"
+    },
+    "apiId": "YUzwlDHiHPQC",
+    "title": "Animal, Vegetable, Miracle",
+    "author": "Barbara Kingsolver"
   },
-  "api_id": "YUzwlDHiHPQC",
-  "title": "Animal, Vegetable, Miracle",
-  "author": "Barbara Kingsolver",
-  "user": "654f9ec2ea7ead465908d1e3"
-},
   {
     "_id": {
       "$oid": "65510e70870c092d5441bc95"
     },
-    "api_book_id": "SJfPs2uflOIC",
+    "apiId": "SJfPs2uflOIC",
     "title": "Caleb's Crossing",
-    "author": "Geraldine Brooks",
-    "user": "654f9ec2ea7ead465908d1e3"
+    "author": "Geraldine Brooks"
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441bc96"
     },
-    "api_book_id": "E-kdBQAAQBAJ",
+    "apiId": "E-kdBQAAQBAJ",
     "title": "A Court of Thorns and Roses",
-    "author": "Sarah J. Maas",
-    "user": "654ff56dea7ead465908d1e4"
+    "author": "Sarah J. Maas"
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441bc97"
     },
-    "api_book_id": "7bTeIug-jFEC",
+    "apiId": "7bTeIug-jFEC",
     "title": "Crown of Midnight",
-    "author": "Sarah J. Maas",
-    "user": "654ff56dea7ead465908d1e4"
+    "author": "Sarah J. Maas"
   }
 ]

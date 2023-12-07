@@ -1,34 +1,30 @@
 [
   {
     "_id": {
-      "$oid": "65510e70870c092d5441bc94"
+      "$oid": "65510e70870c092d5441cb94"
     },
     "apiId": "YUzwlDHiHPQC",
-    "title": "Animal, Vegetable, Miracle",
-    "author": "Barbara Kingsolver"
+    "name": "Harper Collins"
   },
   {
     "_id": {
-      "$oid": "65510e70870c092d5441bc95"
+      "$oid": "65510e70870c092d5441cb95"
     },
     "apiId": "SJfPs2uflOIC",
-    "title": "Caleb's Crossing",
-    "author": "Geraldine Brooks"
+    "name": "HarperCollins Australia"
   },
   {
     "_id": {
-      "$oid": "65510e70870c092d5441bc96"
+      "$oid": "65510e70870c092d5441cb96"
     },
     "apiId": "E-kdBQAAQBAJ",
-    "title": "A Court of Thorns and Roses",
-    "author": "Sarah J. Maas"
+    "name": "Bloomsbury Publishing USA"
   },
   {
     "_id": {
-      "$oid": "65510e70870c092d5441bc97"
+      "$oid": "65510e70870c092d5441cb97"
     },
     "apiId": "7bTeIug-jFEC",
-    "title": "Crown of Midnight",
-    "author": "Sarah J. Maas"
+    "name": "A&C Black"
   }
 ]

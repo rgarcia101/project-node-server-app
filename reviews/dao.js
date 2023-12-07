@@ -1,16 +1,17 @@
-// Reference: Bookshelf Items
-
 import model from "./model.js";
 
-export const createReview = (userId, bookId) =>
-    model.create({ user: userId, bookId: bookId });
+export const userCreateReview = (userId, bookId, reviewContent) =>
+    model.create({ user: userId, book: bookId, review: reviewContent });
 
+export const userDeleteReview = (reviewId) =>
+    model.deleteOne({ _id: reviewId });
 
-export const deleteReview = (userId, bookId) =>
-    model.deleteOne({ user: userId, bookId: bookId });
+export const userUpdateReview = (reviewId, review) =>
+    model.updateOne({ _id: reviewId }, { $set: review });
 
-export const findReviewsByBook = (bookId) => model.find({ user: bookId });
+export const findReviewsByUser = (userId) =>
+    model.find({ user: userId });
 
-export const updateReview = (userId, bookId) =>
-    model.updateOne({ _id: userId },{ book: bookId }, { $set: review });
+export const findReviewsByBook = (bookId) =>
+    model.find({ book: bookId });
 

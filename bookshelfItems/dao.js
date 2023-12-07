@@ -1,16 +1,12 @@
-// Reference: https://github.com/jannunzi/kanbas-node-server-app-cs5610-fa23/blob/a6/likes/dao.js
-
 import model from "./model.js";
+export const createBookShelfItem = (userId, bookId) =>
+    model.create({ user: userId, book: bookId });
 
-export const createBookshelfItem = (userId, bookId) =>
-    model.create({ user: userId, bookId: bookId });
+export const deleteBookshelfItem = (itemId) =>
+    model.deleteOne({ _id: itemId });
 
-export const findBookshelfItemsByUser = (userId) => model.find({ user: userId });
+export const findBooksByUser = (userId) =>
+    model.find({ user: userId }).populate("book");
 
-// How an author can find people to post to
-export const findUsersThatAddBook = (bookId) =>
+export const findUsersByBook = (bookId) =>
     model.find({ bookId: bookId }).populate("user");
-
-
-export const deleteBookshelfItem = (userId, bookId) =>
-    model.deleteOne({ user: userId, bookId: bookId });

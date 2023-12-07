@@ -1,25 +1,8 @@
-// Reference: https://github.com/jannunzi/kanbas-node-server-app-cs5610-fa23/blob/a6/courses/routes.js
-// Changes courses to books. Adapt only required functions.
-
 import * as dao from "./dao.js";
 
 function BookRoutes(app) {
-  // Find book by user
-  app.get("/api/books", async (req, res) => {
-    const user = req.session.currentUser._id;
-    const books = await dao.findBooksByUser(user);
-    res.json(books);
-  });
 
-  // Create book by user
-  app.post("/api/books", async (req, res) => {
-    const user = req.session.currentUser._id;
-    const newBook = await dao.createBookByUser(user, req.body);
-    res.json(newBook);
-  });
-
-  // Find book by id
-  app.get("/api/books/:id", async (req, res) => {
+  const findBookById = async (req, res) => {
     const { id } = req.params;
     const book = await dao.findBookById(id);
     if (!book) {
@@ -27,9 +10,20 @@ function BookRoutes(app) {
       return;
     }
     res.json(book);
-  });
+  };
 
-  // DO I NEED TO ADD ACTUAL ROUTES?
+  const createBook = async (req, res) => {
+    const book = await dao.createBook(req.body);
+    res.json(book);
+  };
 
+  const deleteBook = async (req, res) => {
+    const status = await dao.deleteBook(req.params.bookId);
+    res.json(status);
+  };
+
+  app.get("/api/books/:id", findBookById);
+  app.post("/api/books", createBook);
+  app.delete("/api/books/:id", deleteBook);
 }
 export default BookRoutes;

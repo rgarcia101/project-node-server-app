@@ -11,7 +11,6 @@ const schema = new mongoose.Schema(
         type: mongoose.Schema.Types.ObjectId,
         ref: "users",
       },
-
     },
     {
       collection: "follows",
