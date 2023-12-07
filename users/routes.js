@@ -15,7 +15,7 @@ function UserRoutes(app) {
   };
 
   // A6 - 3.5.2
-  const profile = async (req, res) => {
+  const account = async (req, res) => {
     res.json(req.session['currentUser']);           // A6 4.1
   };
 
@@ -76,7 +76,7 @@ function UserRoutes(app) {
 
 
   app.post("/api/users/signin", signin);            // A6 - 3.5.1
-  app.post("/api/users/profile", profile);          // A6 - 3.5.2  - replace account with profile
+  app.post("/api/users/account", account);          // A6 - 3.5.2
   app.put("/api/users/:userId", updateUser);        // A6 - 3.5.3
   app.get("/api/users", findAllUsers);              // A6 - 3.5.4
   app.post("/api/users", createUser);               // A6 - 3.5.5
