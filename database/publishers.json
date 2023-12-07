@@ -1,0 +1,34 @@
+[
+  {
+    "_id": {
+      "$oid": "65510e70870c092d5441bc94"
+    },
+    "apiId": "YUzwlDHiHPQC",
+    "title": "Animal, Vegetable, Miracle",
+    "author": "Barbara Kingsolver"
+  },
+  {
+    "_id": {
+      "$oid": "65510e70870c092d5441bc95"
+    },
+    "apiId": "SJfPs2uflOIC",
+    "title": "Caleb's Crossing",
+    "author": "Geraldine Brooks"
+  },
+  {
+    "_id": {
+      "$oid": "65510e70870c092d5441bc96"
+    },
+    "apiId": "E-kdBQAAQBAJ",
+    "title": "A Court of Thorns and Roses",
+    "author": "Sarah J. Maas"
+  },
+  {
+    "_id": {
+      "$oid": "65510e70870c092d5441bc97"
+    },
+    "apiId": "7bTeIug-jFEC",
+    "title": "Crown of Midnight",
+    "author": "Sarah J. Maas"
+  }
+]

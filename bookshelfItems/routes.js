@@ -12,6 +12,9 @@ function BookshelfItemRoutes(app) {
     const bookshelf_items = await dao.createBookshelfItem(userId, bookId);
     res.json(bookshelf_items);
   };
+
+  const deleteBookshelfItem = async (req, res) => {};
+
   const findBookshelfItemsByUser = async (req, res) => {
     const userId = req.params.userId;
     const bookshelf_items = await dao.findBookshelfItemsByUser(userId);
@@ -19,21 +22,18 @@ function BookshelfItemRoutes(app) {
   };
 
   const findUsersThatAddBook = async (req, res) => {
-    const bookId = req.params.albumId;
-
-    const likes = await dao.findUsersThatAddBook(bookId);
+    const bookId = req.params.bookId;
+    const bookshelf_items = await dao.findUsersThatAddBook(bookId);
     res.json(bookshelf_items);
   };
 
-  const deleteBookshelfItem = async (req, res) => {};
+  // REVIEW ROUTES
+  app.post("/api/users/:userId/books/:bookId", createBookshelfItem);
+  app.delete("/api/users/:userId/books/:bookId", deleteBookshelfItem);
 
-
-  // Routes
-  app.post("/api/users/:userId/bookshelf_items/:bookId", createBookshelfItem);
-  app.get("/api/users/:userId/bookshelf_items", findBookshelfItemsByUser);
-  app.get("/api/likes/:bookId/users", findUsersThatAddBook);
-  app.delete("/api/users/:userId/bookshelf_items/:bookId", deleteBookshelfItem);
-
+  //
+  app.get("/api/books/:userId/", findBookshelfItemsByUser);
+  app.get("/api/books/:bookId/users", findUsersThatAddBook); // CHECK - return users
 
 }
 export default BookshelfItemRoutes;
