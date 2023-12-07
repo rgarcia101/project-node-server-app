@@ -2,5 +2,5 @@
 
 import schema from "./schema.js";
 import mongoose from "mongoose";
-const model = mongoose.model("bookshelf_items", schema);
+const model = mongoose.model("bookshelfItems", schema);
 export default model;
