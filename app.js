@@ -7,7 +7,8 @@ import mongoose from "mongoose";
 import UserRoutes from "./users/routes.js";
 
 //TODO: calling our local db bookbuddies
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/bookbuddies";
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/bookbuddies";
+const CONNECTION_STRING = "mongodb://127.0.0.1:27017/bookbuddies";
 mongoose.connect(CONNECTION_STRING);
 
 const app = express();
