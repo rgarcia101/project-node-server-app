@@ -3,6 +3,7 @@ const schema = mongoose.Schema(
     {
       title: String,
       author: String,
+      apiId: String,
       isbn: String,
       publisher: String,
       image: String,

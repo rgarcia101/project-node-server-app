@@ -7,7 +7,6 @@ function BookRoutes(app) {
     res.json(books);
   }
 
-
   const saveBook = async (req, res) => {
     const book = await dao.saveBook(req.body);
     res.json(book);
