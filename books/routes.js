@@ -1,4 +1,5 @@
 import * as dao from "./dao.js";
+import {findAllBooksbyUserId} from "./dao.js";
 
 function BookRoutes(app) {
 
@@ -6,6 +7,18 @@ function BookRoutes(app) {
     const books = await dao.findAllBooks();
     res.json(books);
   }
+
+  const findAllBooksbyUserId = async (req, res)=> {
+    const books = await dao.findAllBooksbyUserId(userId);
+    res.json(books);
+  }
+
+  const findAllUsersByBookId = async (req, res)=> {
+    const users = await dao.findAllUsersByBookId(bookId);
+    res.json(users);
+  }
+
+
 
   const saveBook = async (req, res) => {
     const book = await dao.saveBook(req.body);
@@ -39,6 +52,8 @@ function BookRoutes(app) {
   app.post("/api/books", saveBook);
   app.put("/api/books/:bookId", updateBook);
   app.get("/api/books", findAllBooks);
+  app.get("/api/books/:userId", findAllBooksbyUserId());
+  app.get("/api/users/:bookId", findAllUsersByBookId());
   app.get("/api/books/:id", findBookById);
   app.delete("/api/books/:id", deleteBook);
 }

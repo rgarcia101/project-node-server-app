@@ -2,6 +2,11 @@ import model from "./model.js";
 
 export const findAllBooks = () => model.find();
 
+// ADD
+export const findAllBooksbyUserId = (userId) => model.find(userId);
+
+export const findAllUsersByBookId = (bookId) => model.find(bookId);
+
 export const updateBook = (bookId, book) =>
     model.updateOne({ _id: bookId }, { $set: book });
 
