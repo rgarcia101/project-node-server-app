@@ -1,3 +1,7 @@
 .idea
 .env
+<<<<<<< HEAD
+=======
+.idea
+>>>>>>> b28eb6fd762d8e10cb8757719c69dcb4e1d995b1
 node_modules
