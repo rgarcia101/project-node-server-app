@@ -3,10 +3,13 @@ import * as dao from "./dao.js";
 function BookReviewRoutes(app) {
   const userCreateReview = async (req, res) => {
     try {
-      const userId = req.session["currentUser"]._id;
+      const userId = req.params.userId;
       const bookId = req.params.bookId;
       const reviewContent = req.body.review; // Assuming the review is in the request body
-      const newReview = await dao.userCreateReview(userId, bookId, reviewContent);
+
+      // Call the userCreateReview function from the DAO
+      const newReview = await userCreateReview(userId, bookId, reviewContent);
+
       res.status(201).json(newReview);
     } catch (error) {
       console.error(error);

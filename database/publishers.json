@@ -3,28 +3,36 @@
     "_id": {
       "$oid": "65510e70870c092d5441cb94"
     },
-    "apiId": "YUzwlDHiHPQC",
+    "book": {
+      "$oid": "65510e70870c092d5441bc94"
+    },
     "name": "Harper Collins"
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441cb95"
     },
-    "apiId": "SJfPs2uflOIC",
+    "book": {
+      "$oid": "65510e70870c092d5441bc95"
+    },
     "name": "HarperCollins Australia"
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441cb96"
     },
-    "apiId": "E-kdBQAAQBAJ",
+    "book": {
+      "$oid": "65510e70870c092d5441bc96"
+    },
     "name": "Bloomsbury Publishing USA"
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441cb97"
     },
-    "apiId": "7bTeIug-jFEC",
+    "book": {
+      "$oid": "65510e70870c092d5441bc97"
+    },
     "name": "A&C Black"
   }
 ]

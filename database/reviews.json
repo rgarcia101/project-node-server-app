@@ -3,16 +3,24 @@
     "_id": {
     "$oid": "65510e70870c092d5441bc24"
     },
-    "user": "654f9ec2ea7ead465908d1e3",
-    "book": "65510e70870c092d5441bc94",
+    "user": {
+      "$oid": "654f9ec2ea7ead465908d1e3"
+    },
+    "book": {
+      "$oid": "65510e70870c092d5441bc94"
+    },
     "review": "Great book."
   },
   {
     "_id": {
       "$oid": "65510e70870c092d5441bc27"
     },
-    "user": "654ff56dea7ead465908d1e4",
-    "book": "65510e70870c092d5441bc97",
+    "user": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    },
+    "book": {
+      "$oid": "65510e70870c092d5441bc97"
+    },
     "review": "Wonderful plot development."
   }
 ]

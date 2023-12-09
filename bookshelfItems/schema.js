@@ -7,7 +7,7 @@ const schema = new mongoose.Schema(
       book: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "books",
-      },
+      }
     },
     { collection: "bookshelfItems" }
 );

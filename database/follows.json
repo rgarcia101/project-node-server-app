@@ -3,42 +3,66 @@
     "_id": {
       "$oid": "774f9ec2ea7ead465908d1e3"
     },
-    "follower": "654f9ec2ea7ead465908d1e3",
-    "followed": "654ff56dea7ead465908d1e4"
+    "follower": {
+      "$oid": "654f9ec2ea7ead465908d1e3"
+    },
+    "followed": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    }
   },
   {
     "_id": {
       "$oid": "774ff56dea7ead465908d1e4"
     },
-    "follower": "654f9ec2ea7ead465908d1e3",
-    "followed": "654ffdd3870c092d5441bc88"
+    "follower": {
+      "$oid": "654f9ec2ea7ead465908d1e3"
+    },
+    "followed": {
+      "$oid": "654ffdd3870c092d5441bc88"
+    }
   },
   {
     "_id": {
       "$oid": "774ffdd3870c092d5441bc88"
     },
-    "follower": "654ff56dea7ead465908d1e4",
-    "followed": "654f9ec2ea7ead465908d1e3"
+    "follower": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    },
+    "followed": {
+      "$oid": "654f9ec2ea7ead465908d1e3"
+    }
   },
   {
     "_id": {
       "$oid": "774ffdd3870c092d5441bc89"
     },
-    "follower": "654ff56dea7ead465908d1e4",
-    "followed": "654ffdd3870c092d5441bc88"
+    "follower": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    },
+    "followed": {
+      "$oid": "654ffdd3870c092d5441bc88"
+    }
   },
   {
     "_id": {
       "$oid": "774ffdd3870c092d5441bc8a"
     },
-    "follower": "654ffdd3870c092d5441bc88",
-    "followed": "654f9ec2ea7ead465908d1e3"
+    "follower": {
+      "$oid": "654ffdd3870c092d5441bc88"
+    },
+    "followed": {
+      "$oid": "654f9ec2ea7ead465908d1e3"
+    }
   },
   {
     "_id": {
       "$oid": "664ffdd3870c092d5441bc8a"
     },
-    "follower": "654ffdd3870c092d5441bc88",
-    "followed": "654ff56dea7ead465908d1e4"
+    "follower": {
+      "$oid": "654ffdd3870c092d5441bc88"
+    },
+    "followed": {
+      "$oid": "654ff56dea7ead465908d1e4"
+    }
   }
 ]
