@@ -1,9 +1,10 @@
 import model from "./model.js";
-export const createBookShelfItem = (userId, bookId) =>
+export const saveBookShelfItem = (userId, bookId) =>
     model.create({ user: userId, book: bookId });
 
 export const deleteBookshelfItem = (itemId) =>
     model.deleteOne({ _id: itemId });
+
 
 export const findBooksByUser = (userId) =>
     model.find({ user: userId }).populate("book");

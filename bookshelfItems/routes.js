@@ -1,18 +1,22 @@
 import * as dao from "./dao.js";
 
 function BookshelfItemRoutes(app) {
-  const createBookShelfItem = async (req, res) => {
+
+  const saveBookShelfItem = async (req, res) => {
     try {
       const userId = req.params.userId;
-      const bookId = req.body.bookId;  // Assuming you pass bookId in the request body
-      const newItem = await dao.createBookShelfItem(userId, bookId);
+      const bookId = req.body.bookId;
+
+      console.log('Received userId:', userId);
+      console.log('Received bookId:', bookId);
+
+      const newItem = await dao.saveBookShelfItem(userId, bookId);
       res.status(201).json(newItem);
     } catch (error) {
       console.error(error);
-      res.status(500).send("Internal Server Error");
+      res.status(500).json({ error: "Internal Server Error" });
     }
   };
-
   const deleteBookshelfItem = async (req, res) => {
     try {
       const itemId = req.params.itemId;
@@ -46,7 +50,7 @@ function BookshelfItemRoutes(app) {
     }
   };
 
-  app.post("/api/users/:userId/bookshelfItems", createBookShelfItem);
+  app.post("/api/bookshelfItems/users/:userId", saveBookShelfItem);
   app.delete("/api/bookshelfItems/:itemId", deleteBookshelfItem);
   app.get("/api/bookshelfItems/users/:userId", findBooksByUser);
   app.get("/api/bookshelfItems/books/:bookId", findUsersByBook);

@@ -5,7 +5,6 @@ const schema = new mongoose.Schema(
         type: mongoose.Schema.Types.ObjectId,
         ref: "books",
       },
-      apiId: String,
       name: String
     },
     { collection: "publishers" }

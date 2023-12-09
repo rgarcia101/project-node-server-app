@@ -7,7 +7,7 @@
     "password": "123",
     "firstName": "Katie",
     "lastName": "Davenport",
-    "startDate": null,
+    "startDate": "2023-10-01T00:00:00.000Z",
     "role": "USER",
     "photo": null,
     "biography": null
@@ -20,7 +20,7 @@
     "password": "234",
     "firstName": "Raquel",
     "lastName": "Garcia",
-    "startDate": null,
+    "startDate": "2023-11-01T00:00:00.000Z",
     "role": "USER",
     "photo": null,
     "biography": null
@@ -33,7 +33,7 @@
     "password": "345",
     "firstName": "Steffi",
     "lastName": "Patel",
-    "startDate": null,
+    "startDate": "2023-12-01T00:00:00.000Z",
     "role": "USER",
     "photo": null,
     "biography": null
@@ -46,7 +46,7 @@
     "password": "abc",
     "firstName": "Barbara",
     "lastName": "Kingsolver",
-    "startDate": null,
+    "startDate": "2023-09-01T00:00:00.000Z",
     "role": "AUTHOR",
     "photo": null,
     "biography": "Barabara is known for her novels, essays, and poetry that often explore themes of social justice, environmentalism, and human relationships."
@@ -59,7 +59,7 @@
     "password": "def",
     "firstName": "Sarah",
     "lastName": "Maas",
-    "startDate": null,
+    "startDate": "2023-11-01T00:00:00.000Z",
     "role": "AUTHOR",
     "photo": null,
     "biography": "Sarah J. Maas is a bestselling American author known for her young adult and new adult fantasy novels"
