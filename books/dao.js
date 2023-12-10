@@ -1,6 +1,7 @@
 import model from "./model.js";
 
 export const findAllBooks = () => model.find();
+export const findAllBooksByApiId = (apiId) => model.find(apiId);
 
 export const updateBook = (bookId, book) =>
     model.updateOne({ _id: bookId }, { $set: book });
