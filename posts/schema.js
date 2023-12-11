@@ -3,8 +3,11 @@ const schema = new mongoose.Schema(
     {
       user: { type: mongoose.Schema.Types.ObjectId,
         ref: "users" },
+      apiId: String,
+      title: String,
+      author: String,
       postDate: Date,
-      post: String
+      text: String
     },
     { collection: "posts" }
 );
