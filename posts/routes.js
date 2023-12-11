@@ -21,9 +21,23 @@ function PostRoutes(app) {
     res.json(status);
   };
 
+  const findPostByUserAndBook = async (req, res) => {
+    const { userId, bookId } = req.params;
+    const post = await dao.findPostByUserAndBook(userId, bookId);
+    res.json(post);
+  };
+
+  const findPostsByBookApiId = async (req, res) => {
+    const { bookApiId } = req.params;
+    const posts = await dao.findPostsByBookApiId(bookApiId);
+    res.json(posts);
+  };
+
   app.get("/api/posts", findAllPosts);
   app.post("/api/posts", createPost);
   app.delete("/api/posts/:id", deletePost);
   app.put("/api/posts/:id", updatePost);
+  app.get("/api/posts/user/:userId/book/:bookId", findPostByUserAndBook);
+  app.get("/api/posts/book/:bookApiId", findPostsByBookApiId);
 }
 export default PostRoutes;
