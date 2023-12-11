@@ -11,3 +11,8 @@ export const deletePost = (postId) =>
 export const updatePost = (postId, post) =>
     model.updateOne({ _id: postId }, { $set: post });
 
+export const findPostByUserAndBook = (userId, bookId) =>
+    model.findOne({ user: userId, apiId: bookId });
+
+export const findPostsByBookApiId = (bookApiId) =>
+    model.find({ apiId: bookApiId });
