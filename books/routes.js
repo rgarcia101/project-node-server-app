@@ -22,10 +22,9 @@ function BookRoutes(app) {
   };
   const updateBook = async (req, res) => {
     const { bookId } = req.params;
-    const status = await dao.updateBook(BookId, req.body);
+    const status = await dao.updateBook(bookId, req.body);
     res.json(status);
   };
-
 
 
 
