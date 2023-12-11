@@ -6,8 +6,11 @@
     "user": {
       "$oid": "654ffdd3870c092d5441bc89"
     },
-    "postDate": null,
-    "post": "Read my recent book 'Flight Behavior'. You'll love it!"
+    "apiId": "YUzwlDHiHPQC",
+    "title": "Animal, Vegetable, Miracle",
+    "author": "Barbara Kingsolver",
+    "postDate": "2023-10-01T00:00:00.000Z",
+    "text": "Read my recent book 'Flight Behavior'. You'll love it!"
   },
   {
     "_id": {
@@ -16,8 +19,11 @@
     "user": {
       "$oid": "654ffdd3870c092d5441bc89"
     },
-    "postDate": null,
-    "post": "Demon Copperhead was awarded a Pulitzer Prize for Fiction on the evening of Monday, May 8, 2023."
+    "apiId": "YUzwlDHiHPQC",
+    "title": "Animal, Vegetable, Miracle",
+    "author": "Barbara Kingsolver",
+    "postDate": "2023-09-01T00:00:00.000Z",
+    "text": "Demon Copperhead was awarded a Pulitzer Prize for Fiction on the evening of Monday, May 8, 2023."
   },
   {
     "_id": {
@@ -26,7 +32,10 @@
     "user": {
       "$oid": "654ffdd3870c092d5441bc8a"
     },
-    "postDate": null,
-    "post": "Join online to honor the paperback release of A Court of Silver Flames, the fifth installment in the sexy, richly imagined Court of Thorns and Roses series."
+    "apiId": "E-kdBQAAQBAJ",
+    "title": "A Court of Thorns and Roses",
+    "author": "Sarah J. Maas",
+    "postDate": "2023-09-11T00:00:00.000Z",
+    "text": "Join online to honor the paperback release of A Court of Silver Flames, the fifth installment in the sexy, richly imagined Court of Thorns and Roses series."
   }
 ]

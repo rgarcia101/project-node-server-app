@@ -11,6 +11,12 @@ function BookRoutes(app) {
     const book = await dao.saveBook(req.body);
     res.json(book);
   };
+
+  const deleteBook = async (req, res) => {
+    const status = await dao.deleteBook(req.params.bookId);
+    res.json(status);
+  };
+
   const findBookById = async (req, res) => {
     const { id } = req.params;
     const book = await dao.findBookById(id);
@@ -20,25 +26,18 @@ function BookRoutes(app) {
     }
     res.json(book);
   };
+
   const updateBook = async (req, res) => {
     const { bookId } = req.params;
     const status = await dao.updateBook(bookId, req.body);
     res.json(status);
   };
 
-
-
-
-
-  const deleteBook = async (req, res) => {
-    const status = await dao.deleteBook(req.params.bookId);
-    res.json(status);
-  };
-
   app.post("/api/books", saveBook);
+  app.delete("/api/books/:id", deleteBook);
   app.put("/api/books/:bookId", updateBook);
   app.get("/api/books", findAllBooks);
   app.get("/api/books/:id", findBookById);
-  app.delete("/api/books/:id", deleteBook);
+
 }
 export default BookRoutes;
