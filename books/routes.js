@@ -7,6 +7,17 @@ function BookRoutes(app) {
     res.json(books);
   }
 
+  const findAllBooksByApiId = async (req, res) => {
+    const { id } = req.params;
+    const books = await dao.findAllBooksByApiId({apiId: id});
+    console.log(books);
+    if (!books) {
+      res.status(404).send("Books not found");
+      return;
+    }
+    res.json(books);
+  };
+
   const saveBook = async (req, res) => {
     const book = await dao.saveBook(req.body);
     res.json(book);
@@ -37,6 +48,7 @@ function BookRoutes(app) {
   app.delete("/api/books/:id", deleteBook);
   app.put("/api/books/:bookId", updateBook);
   app.get("/api/books", findAllBooks);
+  app.get("/api/books/api/:id", findAllBooksByApiId);
   app.get("/api/books/:id", findBookById);
 
 }
