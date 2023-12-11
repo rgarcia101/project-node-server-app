@@ -17,11 +17,6 @@ function BookRoutes(app) {
     res.json(status);
   };
 
-  const updateBook = async (req, res) => {
-    const { bookId } = req.params;
-    const status = await dao.updateBook(BookId, req.body);
-    res.json(status);
-  };
   const findBookById = async (req, res) => {
     const { id } = req.params;
     const book = await dao.findBookById(id);
@@ -30,6 +25,12 @@ function BookRoutes(app) {
       return;
     }
     res.json(book);
+  };
+
+  const updateBook = async (req, res) => {
+    const { bookId } = req.params;
+    const status = await dao.updateBook(bookId, req.body);
+    res.json(status);
   };
 
   app.post("/api/books", saveBook);
